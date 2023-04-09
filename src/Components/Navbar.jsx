@@ -11,6 +11,9 @@ const Navbar = ({ user }) => {
           Sehaty
         </Link>
       </span>
+      <Link className="link" to="/GestionPharmacie">
+        Gestion Pharmacie
+      </Link>
       {user ? (
         <ul className="list">
           <li className="listItem">

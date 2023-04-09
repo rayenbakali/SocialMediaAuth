@@ -46,7 +46,10 @@ router.get(
   })
 );
 
-router.get("/facebook", passport.authenticate("facebook", { scope: ["profile"] }));
+router.get(
+  "/facebook",
+  passport.authenticate("facebook", { scope: ["profile"] })
+);
 
 router.get(
   "/facebook/callback",
@@ -56,4 +59,4 @@ router.get(
   })
 );
 
-module.exports = router
+module.exports = router;
